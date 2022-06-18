@@ -10,12 +10,12 @@ LOREM = (
     "voluptatem? Dolore repellat commodi phone (323) 555-8762 incidunt Quod\n"
     "possimus ex fugiat iusto et nostrum. Mollitia repellendus ut nostrum molestias\n"
     "saepe Eaque quibusdam sapiente nihil facere ut. Aspernatur voluptas quod omnis\n"
-    "ratione recusandae Vitae odit ipsam distinctio eius excepturi aspernatur ad!\n"
+    "ratione spiderman and spiderwoman are super. o eius excepturi aspernatur ad!\n"
     "Illum dicta consequuntur velit dignissimos nisi. Quis fugit quo dolorem\n"
     "asperiores nulla. Impedit aspernatur eligendi dolorem doloremque qui quisquam!\n"
-    "Numquam ipsam quis est reprehenderit ipsa. Commodi culpa fugit dolorem at\n"
+    "Numquam superwoman and superman are strong Commodi culpa fugit dolorem at\n"
     "distinctio corrupti. Quisquam sequi odio reprehenderit quidem in Assumenda\n"
-    "distinctio repellendus aliquam libero rerum. Voluptas excepturi laboriosam\n"
+    "distinctio repellendus Pacman says: wacawacawacawacawacawaca laboriosam\n"
     "ratione rem necessitatibus Ex corporis soluta ab quibusdam amet rem! Ducimus\n"
     "laborum obi wan kenobi ipisci quae vero culpa. Eveniet ea architecto amet\n"
     "reiciendis repellat commodi? Velit ab sequi magnam aperiam earum. Aspernatur\n"
@@ -25,7 +25,7 @@ LOREM = (
     "dignissimos? Dolores iste quisquam dolor dignissimos obcaecati. Doloribus sint\n"
     "quas harum qui eum explicabo A pariatur ipsa placeat laudantium eveniet\n"
     "Ducimus alias nam dolorem nemo molestias. Dolorem perspiciatis voluptatem\n"
-    "accusamus repellendus dolores Velit beatae nostrum earum ad laboriosam ad Hic\n"
+    "git has a sha number, the music group shanana trum earum ad laboriosam ad Hic\n"
     "et nemo suscipit libero laboriosam Saepe magnam harum expedita ducimus culpa\n"
     "minima odit nihil, est. Minus recusandae vero nobis luke skywalker Perferendis\n"
     "vel 1-800-555-3453 bero quaerat iure laudantium. In culpa minus odio libero\n"
@@ -112,6 +112,53 @@ def main():
         print(search_one.group())
         print(search_two.group())
         print(search_three.group())
+
+    # the ? mark
+    if BOL[0]:
+        spider = r'spider(wo)?man'
+        supers = r'super(wo)?man'
+
+        found_spider = search_for_item(spider, LOREM)
+        found_supers = search_for_item(supers, LOREM)
+
+        print(found_spider)
+        print(found_supers)
+
+    # zero or more
+    if BOL[0]:
+        git = r'sha(na)*'
+        music = r'sha(na)*'
+
+        found_git = search_for_item(git, LOREM)
+        found_nana = search_for_item(music, LOREM)
+
+        print(found_git)
+        print(found_nana)
+
+    # one or more
+    if BOL[0]:
+        git = r'sha(na)+'
+        music = r'sha(na)+'
+
+        found_git = search_for_item(git, LOREM)
+        found_nana = search_for_item(music, LOREM)
+
+        print(found_git)
+        print(found_nana)
+
+    # greedy / non-greedy
+    if BOL[1]:
+        # greedy
+        """The string: 'Pacman says: wacawacawacawacawacawaca' is in LOREM"""
+
+        greed = r'(waca){2,5}'
+        found_greed = search_for_item(greed, LOREM)
+        print(found_greed.group())
+
+        # non-greedy
+        non_greed = r'(waca){2,5}?'
+        found_non_greed = search_for_item(non_greed, LOREM)
+        print(found_non_greed.group())
 
 
 if __name__ == '__main__':
