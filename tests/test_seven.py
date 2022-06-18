@@ -1,7 +1,7 @@
 """Test file for seven.py file using pytest
 """
 from src.chapters.seven.seven import search_phone_numbers
-from src.chapters.seven.seven import search_for
+from src.chapters.seven.seven import search_for_item
 
 
 def test_search_phone_numbers_one():
@@ -39,9 +39,36 @@ def test_search_phone_numbers_five():
     assert found.group(1) == '(123)'
 
 
-def test_search_phone_numbers_five():
+def test_search_phone_numbers_six():
     test_str = 'My phone is (123) 555-2357 call soon'
     find = r'(\(\d{3}\))\s(\d{3}-\d{4})'
     found = search_phone_numbers(find, test_str)
     assert found.group(2) == '555-2357'
 
+
+def test_search_for_item_butter():
+    test_str = 'bacon butter beans ham spam and eggs'
+    find = r'butter|spam'
+    found = search_for_item(find, test_str)
+    assert found.group() == 'butter'
+
+
+def test_search_for_item_spam():
+    test_str = 'bacon butter beans ham spam and eggs'
+    find = r'spam|butter'
+    found = search_for_item(find, test_str)
+    assert found.group() == 'butter'
+
+
+def test_search_for_item_beans():
+    test_str = 'bacon butter beans ham spam and eggs'
+    find = r'beans|chicken'
+    found = search_for_item(find, test_str)
+    assert found.group() == 'beans'
+
+
+def test_search_for_item_chicken():
+    test_str = 'bacon butter beans ham spam and eggs'
+    find = r'chicken|beans'
+    found = search_for_item(find, test_str)
+    assert found.group() == 'beans'
