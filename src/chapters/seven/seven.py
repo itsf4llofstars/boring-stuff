@@ -50,7 +50,7 @@ def search_phone_numbers(search_for, search_in):
     return found_obj
 
 
-def serach_for(search_for, search_in):
+def search_for_item(search_for, search_in):
     """A more general search"""
 
     search_regex = re.compile(search_for)
@@ -96,16 +96,16 @@ def main():
         two = r'second|third'
         three = r'first|third'
 
-        white_side = serach_for(white_force, LOREM)
-        dark_side = serach_for(dark_force, LOREM)
+        white_side = search_for_item(white_force, LOREM)
+        dark_side = search_for_item(dark_force, LOREM)
         print(white_side)
         print(dark_side)
         print(white_side.group())
         print(dark_side.group())
 
-        search_one = serach_for(one, LOREM)
-        search_two = serach_for(two, LOREM)
-        search_three = serach_for(three, LOREM)
+        search_one = search_for_item(one, LOREM)
+        search_two = search_for_item(two, LOREM)
+        search_three = search_for_item(three, LOREM)
         print(search_one)
         print(search_two)
         print(search_three)
