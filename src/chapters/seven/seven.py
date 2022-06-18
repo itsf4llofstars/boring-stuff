@@ -25,7 +25,7 @@ LOREM = (
     "dignissimos? Dolores iste quisquam dolor dignissimos obcaecati. Doloribus sint\n"
     "quas harum qui eum explicabo A pariatur ipsa placeat laudantium eveniet\n"
     "Ducimus alias nam dolorem nemo molestias. Dolorem perspiciatis voluptatem\n"
-    "accusamus repellendus dolores Velit beatae nostrum earum ad laboriosam ad Hic\n"
+    "git has a sha number, the music group shanana trum earum ad laboriosam ad Hic\n"
     "et nemo suscipit libero laboriosam Saepe magnam harum expedita ducimus culpa\n"
     "minima odit nihil, est. Minus recusandae vero nobis luke skywalker Perferendis\n"
     "vel 1-800-555-3453 bero quaerat iure laudantium. In culpa minus odio libero\n"
@@ -114,14 +114,26 @@ def main():
         print(search_three.group())
 
     # the ? mark
-    spider = r'spider(wo)?man'
-    supers = r'super(wo)?man'
+    if BOL[0]:
+        spider = r'spider(wo)?man'
+        supers = r'super(wo)?man'
 
-    found_spider = search_for_item(spider, LOREM)
-    found_supers = search_for_item(supers, LOREM)
+        found_spider = search_for_item(spider, LOREM)
+        found_supers = search_for_item(supers, LOREM)
 
-    print(found_spider)
-    print(found_supers)
+        print(found_spider)
+        print(found_supers)
+
+    # zero or more (we'll be able to see more in findall example)
+    if BOL[1]:
+        git = r'sha(na)*'
+        music = r'sha(na)*'
+
+        found_git = search_for_item(git, LOREM)
+        found_nana = search_for_item(music, LOREM)
+
+        print(found_git)
+        print(found_nana)
 
 
 if __name__ == '__main__':
