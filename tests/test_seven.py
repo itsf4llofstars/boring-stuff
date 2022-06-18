@@ -72,3 +72,17 @@ def test_search_for_item_chicken():
     find = r'chicken|beans'
     found = search_for_item(find, test_str)
     assert found.group() == 'beans'
+
+
+def test_search_for_item_batman():
+    test_str = 'bacon batman beans batwoman and eggs'
+    find = r'bat(wo)?man'
+    found = search_for_item(find, test_str)
+    assert found.group() == 'batman'
+
+
+def test_search_for_item_batwoman():
+    test_str = 'bacon batwoman beans batman and eggs'
+    find = r'bat(wo)?man'
+    found = search_for_item(find, test_str)
+    assert found.group() == 'batwoman'
