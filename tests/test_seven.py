@@ -72,3 +72,45 @@ def test_search_for_item_chicken():
     find = r'chicken|beans'
     found = search_for_item(find, test_str)
     assert found.group() == 'beans'
+
+
+def test_search_for_item_batman():
+    test_str = 'bacon batman beans batwoman and eggs'
+    find = r'bat(wo)?man'
+    found = search_for_item(find, test_str)
+    assert found.group() == 'batman'
+
+
+def test_search_for_item_batwoman():
+    test_str = 'bacon batwoman beans batman and eggs'
+    find = r'bat(wo)?man'
+    found = search_for_item(find, test_str)
+    assert found.group() == 'batwoman'
+
+
+def test_search_for_item_sha():
+    test_str = 'Git uses a sha number, but shanana is a band.'
+    find = r'sha(na)*'
+    found = search_for_item(find, test_str)
+    assert found.group() == 'sha'
+
+
+def test_search_for_item_shanana():
+    test_str = 'The group shanana may not know of Git sha numbers.'
+    find = r'sha(na)*'
+    found = search_for_item(find, test_str)
+    assert found.group() == 'shanana'
+
+
+def test_search_for_item_greed():
+    test_str = 'funny hahahahahahahaha'  # 8
+    find = r'(ha){3,6}'
+    found = search_for_item(find, test_str)
+    assert found.group() == 'hahahahahaha'
+
+
+def test_search_for_item_nongreed():
+    test_str = 'funny hahahahahahahaha'  # 8
+    find = r'(ha){3,6}?'
+    found = search_for_item(find, test_str)
+    assert found.group() == 'hahaha'

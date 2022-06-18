@@ -63,7 +63,7 @@ def main():
     global LOREM, BOL
 
     # Phone numbers and groups
-    if BOL[0]:
+    if BOL[1]:
         """Phone number: NNN-NNN-NNNN"""
         # phone_num = r'\d\d\d-\d\d\d-\d\d\d\d'
         # phone_num = r'\d{3}-\d{3}-\d{4}'
@@ -88,7 +88,7 @@ def main():
         print(bar)
 
     # Using a pipe
-    if BOL[0]:
+    if BOL[1]:
         white_force = r'obi wan kenobi|darth vader'
         dark_force = r'darth vader|luke skywalker'
 
@@ -114,7 +114,7 @@ def main():
         print(search_three.group())
 
     # the ? mark
-    if BOL[0]:
+    if BOL[1]:
         spider = r'spider(wo)?man'
         supers = r'super(wo)?man'
 
@@ -125,7 +125,7 @@ def main():
         print(found_supers)
 
     # zero or more
-    if BOL[0]:
+    if BOL[1]:
         git = r'sha(na)*'
         music = r'sha(na)*'
 
@@ -136,7 +136,7 @@ def main():
         print(found_nana)
 
     # one or more
-    if BOL[0]:
+    if BOL[1]:
         git = r'sha(na)+'
         music = r'sha(na)+'
 
