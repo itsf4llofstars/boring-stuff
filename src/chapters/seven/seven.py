@@ -10,10 +10,10 @@ LOREM = (
     "voluptatem? Dolore repellat commodi phone (323) 555-8762 incidunt Quod\n"
     "possimus ex fugiat iusto et nostrum. Mollitia repellendus ut nostrum molestias\n"
     "saepe Eaque quibusdam sapiente nihil facere ut. Aspernatur voluptas quod omnis\n"
-    "ratione recusandae Vitae odit ipsam distinctio eius excepturi aspernatur ad!\n"
+    "ratione spiderman and spiderwoman are super. o eius excepturi aspernatur ad!\n"
     "Illum dicta consequuntur velit dignissimos nisi. Quis fugit quo dolorem\n"
     "asperiores nulla. Impedit aspernatur eligendi dolorem doloremque qui quisquam!\n"
-    "Numquam ipsam quis est reprehenderit ipsa. Commodi culpa fugit dolorem at\n"
+    "Numquam superwoman and superman are strong Commodi culpa fugit dolorem at\n"
     "distinctio corrupti. Quisquam sequi odio reprehenderit quidem in Assumenda\n"
     "distinctio repellendus aliquam libero rerum. Voluptas excepturi laboriosam\n"
     "ratione rem necessitatibus Ex corporis soluta ab quibusdam amet rem! Ducimus\n"
@@ -112,6 +112,16 @@ def main():
         print(search_one.group())
         print(search_two.group())
         print(search_three.group())
+
+    # the ? mark
+    spider = r'spider(wo)?man'
+    supers = r'super(wo)?man'
+
+    found_spider = search_for_item(spider, LOREM)
+    found_supers = search_for_item(supers, LOREM)
+
+    print(found_spider)
+    print(found_supers)
 
 
 if __name__ == '__main__':
