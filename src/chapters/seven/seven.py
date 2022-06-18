@@ -136,7 +136,7 @@ def main():
         print(found_nana)
 
     # one or more
-    if BOL[1]:
+    if BOL[0]:
         git = r'sha(na)+'
         music = r'sha(na)+'
 
@@ -145,6 +145,19 @@ def main():
 
         print(found_git)
         print(found_nana)
+
+    # Greedy
+    ex_str = 'Pacman says: wacawacawacawacawacawaca'
+
+    greed = r'(waca){2,5}'
+    found_greed = search_for_item(greed, ex_str)
+    print(found_greed.group())
+
+    # non-greedy
+    non_greed = r'(waca){2,5}?'
+    found_non_greed = search_for_item(non_greed, ex_str)
+    print(found_non_greed.group())
+
 
 
 if __name__ == '__main__':
