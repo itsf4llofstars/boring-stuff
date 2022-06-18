@@ -37,6 +37,39 @@ LOREM = (
     "dolore ipsa aperiam Similique rem iste quas modi\n"
 )
 
+LOREM_TWO = (
+    "Sit maiores recusandae ipsum nihil amet iste. Et illo at nulla quaerat\n"
+    "assumenda. Quis phone 232-555-2341 aesentium corrupti laboriosam placeat\n"
+    "voluptatem? bacon  repellat commodi phone (323) 555-8762 incidunt Quod\n"
+    "possimus ex fugiat iusto et nostrum. Mollitia repellendus ut nostrum molestias\n"
+    "saepe Eaque quibusdam sapiente nihil facere ut. Aspernatur voluptas quod omnis\n"
+    "ratione spiderman and bacon woman are super. o eius excepturi aspernatur ad!\n"
+    "Illum dicta consequuntur velit dignissimos nisi. Quis fugit quo dolorem\n"
+    "asperiores nulla. Impedit aspernatur eligendi dolorem doloremque qui quisquam!\n"
+    "Numquam superwoman and superman are strong Commodi culpa fugit dolorem at\n"
+    "distinctio corrupti. Quisquam sequi odio reprehenderit quidem in Assumenda\n"
+    "distinctio repellendus Pacman says: wacawacawacawacawacawaca laboriosam\n"
+    "ratione rem necessitatibus Ex corporis soluta ab quibusdam amet rem! Ducimus\n"
+    "laborum obi wan kenobi ipisci quae vero culpa. Eveniet ea architecto amet\n"
+    "reiciendis repellat commodi? Velit ab sequi magnam aperiam earum. Aspernatur\n"
+    "est minus deserunt third ore provident Vel darth vader llo autem aliquam\n"
+    "voluptas quis esse, omnis. bacon tate first sciunt rem nostrum est quaerat Id\n"
+    "unde sed culpa recusandae voluptate? Ea consectetur dicta dolore excepturi\n"
+    "dignissimos? Dolores iste quisquam dolor dignissimos obcaecati. Doloribus sint\n"
+    "quas harum qui eum explicabo A pariatur ipsa placeat laudantium eveniet\n"
+    "Ducimus alias nam dolorem nemo molestias. Dolorem perspiciatis voluptatem\n"
+    "git has a sha number, the music group shanana trum earum ad laboriosam ad Hic\n"
+    "et nemo suscipit libero laboriosam Saepe magnam harum expedita ducimus culpa\n"
+    "minima odit nihil, est. Minus recusandae vero nobis luke skywalker Perferendis\n"
+    "vel 1-800-555-3453 bero quaerat iure laudantium. In culpa minus odio libero\n"
+    "expedita? Incidunt qui odio praesentium perferendis delectus. Consectetur rem\n"
+    "perferendis veniam possimus iure perspiciatis! Autem animi doloremque at\n"
+    "voluptas minus Aspernatur totam molestias esse dolores perferendis. Numquam\n"
+    "voluptatibus soluta aut ipsa amet In tenetur aliquid id quos excepturi Eius\n"
+    "architecto libero deserunt suscipit second unt Molestiae quisquam suscipit\n"
+    "dolore ipsa aperiam Similique rem iste quas modi\n"
+)
+
 
 def search_phone_numbers(search_for, search_in):
     """phone number specific"""
@@ -63,7 +96,7 @@ def main():
     global LOREM, BOL
 
     # Phone numbers and groups
-    if BOL[1]:
+    if BOL[0]:
         """Phone number: NNN-NNN-NNNN"""
         # phone_num = r'\d\d\d-\d\d\d-\d\d\d\d'
         # phone_num = r'\d{3}-\d{3}-\d{4}'
@@ -88,7 +121,7 @@ def main():
         print(bar)
 
     # Using a pipe
-    if BOL[1]:
+    if BOL[0]:
         white_force = r'obi wan kenobi|darth vader'
         dark_force = r'darth vader|luke skywalker'
 
@@ -114,7 +147,7 @@ def main():
         print(search_three.group())
 
     # the ? mark
-    if BOL[1]:
+    if BOL[0]:
         spider = r'spider(wo)?man'
         supers = r'super(wo)?man'
 
@@ -125,7 +158,7 @@ def main():
         print(found_supers)
 
     # zero or more
-    if BOL[1]:
+    if BOL[0]:
         git = r'sha(na)*'
         music = r'sha(na)*'
 
@@ -136,7 +169,7 @@ def main():
         print(found_nana)
 
     # one or more
-    if BOL[1]:
+    if BOL[0]:
         git = r'sha(na)+'
         music = r'sha(na)+'
 
@@ -147,7 +180,7 @@ def main():
         print(found_nana)
 
     # greedy / non-greedy
-    if BOL[1]:
+    if BOL[0]:
         # greedy
         """The string: 'Pacman says: wacawacawacawacawacawaca' is in LOREM"""
 
@@ -159,6 +192,9 @@ def main():
         non_greed = r'(waca){2,5}?'
         found_non_greed = search_for_item(non_greed, LOREM)
         print(found_non_greed.group())
+
+
+    # TODO: Add findall examples
 
 
 if __name__ == '__main__':
