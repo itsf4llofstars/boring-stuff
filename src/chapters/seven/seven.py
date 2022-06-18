@@ -15,7 +15,7 @@ LOREM = (
     "asperiores nulla. Impedit aspernatur eligendi dolorem doloremque qui quisquam!\n"
     "Numquam superwoman and superman are strong Commodi culpa fugit dolorem at\n"
     "distinctio corrupti. Quisquam sequi odio reprehenderit quidem in Assumenda\n"
-    "distinctio repellendus aliquam libero rerum. Voluptas excepturi laboriosam\n"
+    "distinctio repellendus Pacman says: wacawacawacawacawacawaca laboriosam\n"
     "ratione rem necessitatibus Ex corporis soluta ab quibusdam amet rem! Ducimus\n"
     "laborum obi wan kenobi ipisci quae vero culpa. Eveniet ea architecto amet\n"
     "reiciendis repellat commodi? Velit ab sequi magnam aperiam earum. Aspernatur\n"
@@ -146,18 +146,19 @@ def main():
         print(found_git)
         print(found_nana)
 
-    # Greedy
-    ex_str = 'Pacman says: wacawacawacawacawacawaca'
+    # greedy / non-greedy
+    if BOL[1]:
+        # greedy
+        """The string: 'Pacman says: wacawacawacawacawacawaca' is in LOREM"""
 
-    greed = r'(waca){2,5}'
-    found_greed = search_for_item(greed, ex_str)
-    print(found_greed.group())
+        greed = r'(waca){2,5}'
+        found_greed = search_for_item(greed, LOREM)
+        print(found_greed.group())
 
-    # non-greedy
-    non_greed = r'(waca){2,5}?'
-    found_non_greed = search_for_item(non_greed, ex_str)
-    print(found_non_greed.group())
-
+        # non-greedy
+        non_greed = r'(waca){2,5}?'
+        found_non_greed = search_for_item(non_greed, LOREM)
+        print(found_non_greed.group())
 
 
 if __name__ == '__main__':
