@@ -1,8 +1,8 @@
-lorem_text ="""    Adipisicing sit atque doloremque eveniet ducimus maiores Labore perferendi
+lorem_text ="""Adipisicing sit atque doloremque eveniet ducimus maiores Labore perferendi
 voluptas rem atque incidunt Rerum maxime repellendus veritatis odit cupiditate
 necessitatibus A phone number is 232-555-2371 erferendis sequi Illo accusamus
 aliquid quisquam sint veritatis iste, facilis! Totam ab veniam est nemo tenetu!
-Molestias A pone number is (323 555-3142 tore? Nobis accusamus eveniet ea
+Molestias A pone number is (323) 555-3142 tore? Nobis accusamus eveniet ea
 repudiandae dignissimos Architecto sapiente soluta aperiam quibusdam sed Totam
 itaque ad suscipit impedit a est. Eius vero eveniet deserunt magnam adipisci
 Doloribus quidem aperiam optio rem minima? Exercitationem ullam est expedita
@@ -20,22 +20,22 @@ eos architecto odio modi Voluptates consectetur corrupti autem ullam similiqu
 laboriosam aut architecto! Facilis vel voluptatibus cupiditate similique eius
 qui.
 
-    Consectetur ea itaque similique atque officiis. Maiores iure quod numquam
+Consectetur ea itaque similique atque officiis. Maiores iure quod numquam
 quod asperiores. Suscipit dolor magni rerum architecto corporis Exercitationem
-dolore voluptatibus quaerat temporibus architecto! Deleniti assumenda earum
+dolore obi wan kenobi aerat temporibus architecto! Deleniti assumenda earum
 fuga aliquam eligendi? Beatae placeat molestiae aliquid at sapiente iusto.
 Repellendus vitae nobis quos deserunt sit Nesciunt recusandae sed obcaecati
-tenetur quas consequuntur beatae esse accusantium Facilis ullam nesciunt in
+tenetur quas consequuntur grand mof tarkin accusantium Facilis ullam nesciunt
 nostrum possimus, exercitationem Aspernatur cum id quo iure esse. Amet iste
 molestiae libero voluptatibus quo. Sequi nostrum eligendi nemo impedit fugit.
-Porro dolores molestiae quas sapiente rem? Consectetur deserunt odio quibusdam
+Porro dolores molestiae quas sapiente rem? darth vader eserunt odio quibusdam
 quod quod, itaque Est nobis doloribus molestias impedit blanditiis obcaecati
 Repudiandae quo
 
-    Sit maiores recusandae ipsum nihil amet iste. Et illo at nulla quaerat
+Sit maiores recusandae ipsum nihil amet iste. Et illo at nulla quaerat
 assumenda. Quis mollitia maiores praesentium corrupti laboriosam placeat
 voluptatem? Dolore repellat commodi accusantium expedita incidunt Quod
-possimus ex fugiat iusto et nostrum. Mollitia repellendus ut nostrum molestias
+possimus ex fugiat iusto et nostrum. Mollitia luke skywalker nostrum molestias
 saepe Eaque quibusdam sapiente nihil facere ut. Aspernatur voluptas quod omnis
 ratione recusandae Vitae odit ipsam distinctio eius excepturi aspernatur ad!
 Illum dicta consequuntur velit dignissimos nisi. Quis fugit quo dolorem
@@ -46,15 +46,15 @@ distinctio repellendus aliquam libero rerum. Voluptas excepturi laboriosam
 ratione rem necessitatibus Ex corporis soluta ab quibusdam amet rem! Ducimus
 laborum inventore iste adipisci quae vero culpa. Eveniet ea architecto
 reiciendis repellat commodi? Velit ab sequi magnam aperiam earum. Aspernatur
-est minus deserunt inventore provident Vel accusantium illo autem aliquam
+est minus deserunt inventore third ent Vel accusantium illo autem aliquam
 voluptas quis esse, omnis. Cupiditate hic nesciunt rem nostrum est quaerat Id
 unde sed culpa recusandae voluptate? Ea consectetur dicta dolore excepturi
 dignissimos? Dolores iste quisquam dolor dignissimos obcaecati. Doloribus sint
-quas harum qui eum explicabo A pariatur ipsa placeat laudantium eveniet
+quas harum qui eum explicabo A first ur ipsa placeat laudantium eveniet
 Ducimus alias nam dolorem nemo molestias. Dolorem perspiciatis voluptatem
 accusamus repellendus dolores Velit beatae nostrum earum ad laboriosam ad Hic
 et nemo suscipit libero laboriosam Saepe magnam harum expedita ducimus culpa
-minima odit nihil, est. Minus recusandae vero nobis libero quidem? Perferendis
+minima odit nihil, est. second us recusandae vero nobis libero quidem? hic rem
 vel nihil dolore libero quaerat iure laudantium. In culpa minus odio libero
 expedita? Incidunt qui odio praesentium perferendis delectus. Consectetur rem
 perferendis veniam possimus iure perspiciatis! Autem animi doloremque at
