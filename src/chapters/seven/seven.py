@@ -124,10 +124,21 @@ def main():
         print(found_spider)
         print(found_supers)
 
-    # zero or more (we'll be able to see more in findall example)
-    if BOL[1]:
+    # zero or more
+    if BOL[0]:
         git = r'sha(na)*'
         music = r'sha(na)*'
+
+        found_git = search_for_item(git, LOREM)
+        found_nana = search_for_item(music, LOREM)
+
+        print(found_git)
+        print(found_nana)
+
+    # one or more
+    if BOL[1]:
+        git = r'sha(na)+'
+        music = r'sha(na)+'
 
         found_git = search_for_item(git, LOREM)
         found_nana = search_for_item(music, LOREM)
