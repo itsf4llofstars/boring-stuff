@@ -1,6 +1,7 @@
 """Chapter Seven: Pattern Matching with Regular Expressions
 """
 import re
+import lorem as lor
 
 
 def main():
